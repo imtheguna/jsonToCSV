@@ -44,7 +44,7 @@ for:
   - path: JsonToCSV-windows.zip
  
   build_script:
-  - flet pack main.py --name DataMasking --add-data "assets;assets" --product-name DataMasking --product-version "0.0.1" --copyright "Copyright (c) 2024 GKTwin Apps"
+  - flet pack main.py --name JsonToCSV --add-data "assets;assets" --product-name JsonToCSV --product-version "0.0.1" --copyright "Copyright (c) 2024 GKTwin Apps"
 
 #
 #   macOS package
@@ -61,7 +61,7 @@ for:
   - path: JsonToCSV-macos.tar.gz
 
   build_script:
-  - flet pack main.py --name DataMasking --add-data "assets:assets" --product-name DataMasking --product-version "0.0.1" --copyright "Copyright (c) 2024 GKTwin Apps"
+  - flet pack main.py --name JsonToCSV --add-data "assets:assets" --product-name JsonToCSV --product-version "0.0.1" --copyright "Copyright (c) 2024 GKTwin Apps"
 
 #
 #   Linux package

@@ -8,7 +8,7 @@ Introducing our new project: a tool designed for seamless conversion of JSON to 
 | :---: | :---: | :-----: | 
 |   ✔️   | ✔️  |  ✔️   
 
-To run the application, download the application for [Mac](https://github.com/imtheguna/jsonToCSV/releases/download/JSONToCSV-v1.0.19/JsonToCSV-macos.tar.gz), [Linux](https://github.com/imtheguna/jsonToCSV/releases/download/JSONToCSV-v1.0.19/JsonToCSV-linux.tar.gz), [Windows](https://github.com/imtheguna/jsonToCSV/releases/download/JSONToCSV-v1.0.19/JsonToCSV-windows.zip)
+To run the application, download the application for [Mac](https://github.com/imtheguna/jsonToCSV/releases/download/JSONToCSV-v1.0.38/JsonToCSV-macos.tar.gz), [Linux](https://github.com/imtheguna/jsonToCSV/releases/download/JSONToCSV-v1.0.38/JsonToCSV-linux.tar.gz), [Windows](https://github.com/imtheguna/jsonToCSV/releases/download/JSONToCSV-v1.0.38/JsonToCSV-windows.zip)
 
 ### Step 1
   Once the application downloaded, Select the JSON or Enter the API

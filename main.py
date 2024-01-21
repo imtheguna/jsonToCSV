@@ -426,4 +426,5 @@ def main(page: ft.Page):
     page.on_view_pop = view_pop
     page.go(page.route)
 
-ft.app(target=main, view=ft.AppView.WEB_BROWSER,port=8502)
+ft.app(target=main)
+#, view=ft.AppView.WEB_BROWSER,port=8502

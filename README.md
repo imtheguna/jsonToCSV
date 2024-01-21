@@ -8,7 +8,7 @@ Introducing our new project: a tool designed for seamless conversion of JSON to 
 | :---: | :---: | :-----: | 
 |   ✔️   | ✔️  |  ✔️   
 
-To run the application, download the application for [Mac](https://github.com/imtheguna/datamasking/releases/download/DataMasking-v1.0.25/DataMasking-macos.tar.gz), [Linux](https://github.com/imtheguna/datamasking/releases/download/DataMasking-v1.0.25/DataMasking-linux.tar.gz), [Windows](https://github.com/imtheguna/datamasking/releases/download/DataMasking-v1.0.25/DataMasking-windows.zip)
+To run the application, download the application for [Mac](https://github.com/imtheguna/jsonToCSV/releases/download/JSONToCSV-v1.0.8/JsonToCSV-macos.tar.gz), [Linux](https://github.com/imtheguna/jsonToCSV/releases/download/JSONToCSV-v1.0.8/JsonToCSV-linux.tar.gz), [Windows](https://github.com/imtheguna/jsonToCSV/releases/download/JSONToCSV-v1.0.8/JsonToCSV-windows.zip)
 
 ### Step 1
   Once the application downloaded, Select the JSON or Enter the API

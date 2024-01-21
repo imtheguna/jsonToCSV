@@ -152,6 +152,7 @@ def main(page: ft.Page):
             on_click(1,e)
     
     def submit(i):
+        readjSON()
         if(len(tb4.value)==0 or len(tb5.value)==0):
             on_click(1,'Enter the out file details')
             return

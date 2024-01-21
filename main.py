@@ -330,7 +330,7 @@ def main(page: ft.Page):
                   ),on_tap=srcInput),
         GestureDetector(content=Container(Column([
             Icon(name=icons.BROWSER_UPDATED,color=ft.colors.WHITE12,size=30),
-            Text(r"From API",size=20,color=ft.colors.WHITE12)
+            Text(r"Read API",size=20,color=ft.colors.WHITE12)
             ],
                   alignment=MainAxisAlignment.CENTER,
                   horizontal_alignment=CrossAxisAlignment.CENTER),

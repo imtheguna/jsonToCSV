@@ -1,0 +1,81 @@
+image:
+- Visual Studio 2019
+- macOS
+- Ubuntu
+
+skip_branch_with_pr: true
+stack: python 3.11
+
+environment:
+  GITHUB_TOKEN:
+    secure: nJq0vhcsoxHg/XfqreXfulghToF4PAuTmSAXnuCx980Gz8BbY4msEgnYPho1c3+8qRPfC2grDbdmDEE9SdKVr5k9LC9mRhn9w3jUK3o7QapSl8vXwVD8+zXf9DstJUvm
+
+install:
+- pip install -r requirements.txt
+
+
+test: off
+
+# Publish artifacts to GitHub Releases on "tag" builds --icon dataicon.png 
+deploy:
+  release: JSONToCSV-v$(APPVEYOR_BUILD_VERSION)
+  description: 'JSONToCSV Tool for ETL'
+  provider: GitHub
+  auth_token: $(GITHUB_TOKEN)
+  on:
+    branch: main
+    APPVEYOR_REPO_TAG_MAIN: true
+    APPVEYOR_REPO_TAG: true
+
+
+#
+#   Windows package
+# 
+for:
+-
+  matrix:
+    only:
+    - image: Visual Studio 2019
+
+  after_build:
+  - 7z a JsonToCSV-windows.zip %CD%\dist\*.exe
+
+  artifacts:
+  - path: JsonToCSV-windows.zip
+ 
+  build_script:
+  - flet pack main.py --name DataMasking --add-data "assets;assets" --product-name DataMasking --product-version "0.0.1" --copyright "Copyright (c) 2024 GKTwin Apps"
+
+#
+#   macOS package
+# 
+-
+  matrix:
+    only:
+    - image: macOS
+
+  after_build:
+  - tar -czvf JsonToCSV-macos.tar.gz -C dist JsonToCSV.app
+
+  artifacts:
+  - path: JsonToCSV-macos.tar.gz
+
+  build_script:
+  - flet pack main.py --name DataMasking --add-data "assets:assets" --product-name DataMasking --product-version "0.0.1" --copyright "Copyright (c) 2024 GKTwin Apps"
+
+#
+#   Linux package
+# 
+-
+  matrix:
+    only:
+    - image: Ubuntu
+
+  after_build:
+  - tar -czvf JsonToCSV-linux.tar.gz -C dist JsonToCSV
+
+  artifacts:
+  - path: JsonToCSV-linux.tar.gz
+
+  build_script:
+  - flet pack main.py --name JsonToCSV --add-data "assets:assets" --product-name JsonToCSV --product-version "0.0.1" --copyright "Copyright (c) 2024 GKTwin Apps"

@@ -1,4 +1,3 @@
-import urllib, json
 import math
 import flet as ft
 from flet import *

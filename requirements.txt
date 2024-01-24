@@ -3,4 +3,4 @@ pyinstaller
 numpy
 cython
 pytz
-pandas
+pandas==2.0.3

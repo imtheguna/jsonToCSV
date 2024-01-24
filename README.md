@@ -1,6 +1,6 @@
 # Json To CSV
 
-Introducing our new project: a tool designed for seamless conversion of JSON to CSV files, compatible with Mac, Windows, and Linux systems, offering a user-friendly experience. With the ability to select files locally or fetch data from APIs, users have the flexibility to tailor their conversion process. Additionally, features include customizable header options, the ability to skip the root, and the dynamic selection of the root node for CSV creation based on user preferences. 
+Introducing our new project,A Tool designed for seamless conversion of JSON to CSV files, compatible with Mac, Windows, and Linux systems, offering a user-friendly experience. With the ability to select files locally or fetch data from APIs, users have the flexibility to tailor their conversion process. Additionally, features include customizable header options, the ability to skip the root, and the dynamic selection of the root node for CSV creation based on user preferences. 
 
 #### Platform Support
 
@@ -8,7 +8,7 @@ Introducing our new project: a tool designed for seamless conversion of JSON to 
 | :---: | :---: | :-----: | 
 |   ✔️   | ✔️  |  ✔️   
 
-To run the application, download the application for [Mac](https://github.com/imtheguna/jsonToCSV/releases/download/JSONToCSV-v1.0.40/JsonToCSV-macos.tar.gz), [Linux](https://github.com/imtheguna/jsonToCSV/releases/download/JSONToCSV-v1.0.40/JsonToCSV-linux.tar.gz), [Windows](https://github.com/imtheguna/jsonToCSV/releases/download/JSONToCSV-v1.0.40/JsonToCSV-windows.zip)
+To run the application, download the application for [Mac](https://github.com/imtheguna/jsonToCSV/releases/download/JSONToCSV-v1.0.41/JsonToCSV-macos.tar.gz), [Linux](https://github.com/imtheguna/jsonToCSV/releases/download/JSONToCSV-v1.0.41/JsonToCSV-linux.tar.gz), [Windows](https://github.com/imtheguna/jsonToCSV/releases/download/JSONToCSV-v1.0.41/JsonToCSV-windows.zip)
 
 ### Step 1
   Once the application downloaded, Select the JSON or Enter the API

@@ -3,6 +3,7 @@ import flet as ft
 from flet import *
 import requests
 import json,csv
+import pandas as pd
 class Headerinput():
     def __init__(self) -> None:
         self.oldheader = []
@@ -108,16 +109,23 @@ def main(page: ft.Page):
     
     def writeCSV(data):
         try:
-            with open(tb4.value+tb5.value,'w') as outfile:
-                writer = csv.writer(outfile)
-                if(isHeaderUpdate):
-                    headers=headerinput.getNewHeader()
-                else:
-                    headers = headerinput.getOldHeader()
-                writer.writerow(headers)
-                for rec in data:
-                    writer.writerow(rec.values())
-                on_click(1,'CSV Created')
+            df =  pd.json_normalize(data)
+            if(isHeaderUpdate):
+                headers=headerinput.getNewHeader()
+            else:
+                headers = headerinput.getOldHeader()
+            print(headers)
+            df.to_csv(tb4.value+tb5.value,header=headers,index=False)
+            # with open(tb4.value+tb5.value,'w') as outfile:
+            #     writer = csv.writer(outfile)
+            #     if(isHeaderUpdate):
+            #         headers=headerinput.getNewHeader()
+            #     else:
+            #         headers = headerinput.getOldHeader()
+            #     writer.writerow(headers)
+            #     for rec in data:
+            #         writer.writerow(rec.values())
+            on_click(1,'CSV Created')
         except Exception as e:
             print(e)
             on_click(1,e)   

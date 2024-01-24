@@ -8,7 +8,7 @@ Introducing our new project,A Tool designed for seamless conversion of JSON to C
 | :---: | :---: | :-----: | 
 |   ✔️   | ✔️  |  ✔️   
 
-To run the application, download the application for [Mac](https://github.com/imtheguna/jsonToCSV/releases/download/JSONToCSV-v1.0.41/JsonToCSV-macos.tar.gz), [Linux](https://github.com/imtheguna/jsonToCSV/releases/download/JSONToCSV-v1.0.41/JsonToCSV-linux.tar.gz), [Windows](https://github.com/imtheguna/jsonToCSV/releases/download/JSONToCSV-v1.0.41/JsonToCSV-windows.zip)
+To run the application, download the application for [Mac](https://github.com/imtheguna/jsonToCSV/releases/download/JSONToCSV-v1.0.43/JsonToCSV-macos.tar.gz), [Linux](https://github.com/imtheguna/jsonToCSV/releases/download/JSONToCSV-v1.0.43/JsonToCSV-linux.tar.gz), [Windows](https://github.com/imtheguna/jsonToCSV/releases/download/JSONToCSV-v1.0.43/JsonToCSV-windows.zip)
 
 ### Step 1
   Once the application downloaded, Select the JSON or Enter the API
